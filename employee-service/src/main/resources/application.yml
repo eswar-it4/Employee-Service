@@ -1,0 +1,14 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: employee-service
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    password: root
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+    show-sql: true
